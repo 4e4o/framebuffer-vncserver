@@ -1,5 +1,7 @@
 # C++ objects and libs
 
+CMakeLists.txt.user
+
 *.slo
 *.lo
 *.o

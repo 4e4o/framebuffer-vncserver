@@ -335,9 +335,10 @@ static void update_screen(void)
 
                     if (pixels != *c)
                     {
+                        int bit = 0;
                         *c = pixels;
 
-                        for (int bit = 0; bit < 8; bit++)
+                        for (bit = 0; bit < 8; bit++)
                         {
                             // *(r+bit) = ((pixels >> (7-bit)) & 0x1) ? 0xFF : 0x00;
                             *(r + bit) = ((pixels >> (7 - bit)) & 0x1) ? 0x00 : 0xFF;
